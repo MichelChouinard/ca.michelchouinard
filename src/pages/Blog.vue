@@ -21,6 +21,14 @@
   </Layout>
 </template>
 
+<script>
+export default {
+  metaInfo: {
+    title: 'Blog'
+  }
+}
+</script>
+
 <page-query>
 query Blog {
 	posts: allBlogPost(sortBy: "date") {
